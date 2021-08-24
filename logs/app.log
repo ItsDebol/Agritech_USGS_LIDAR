@@ -1,0 +1,13 @@
+
+RuntimeError: writers.las: Couldn't open file '../data/laz/temp.laz' for output.
+21-08-2021 16:32:28 - [INFO] -  helper - (helper.py).read_json(line 31) - Json file read from ./getdata.json.
+21-08-2021 16:32:31 - [ERROR] -  __main__ - (fetch.py).run_pipeline(line 64) - Pipeline execution failed
+Traceback (most recent call last):
+  File "/mnt/10ac-batch-4/all-notebooks/yosef_emiru/Agritech_USGS_LIDAR/scripts/datafetching.py", line 43, in run_pipeline
+    pipeline.execute()
+  File "/opt/miniconda/lib/python3.9/site-packages/pdal/pipeline.py", line 40, in execute
+    return self.p.execute()
+  File "libpdalpython.pyx", line 180, in pdal.libpdalpython.PyPipeline.execute
+RuntimeError: writers.gdal: Unable to open GDAL datasource '../data/tif/temp.tif'.
+21-08-2021 16:33:18 - [INFO] -  helper - (helper.py).read_json(line 31) - Json file read from ./pipe_temp.json.
+21-08-2021 16:33:22 - [INFO] -  __main__ - (fetch.py).run_pipeline(line 61) - Pipeline executed successfully.
